@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c09abeb6.css",
+    "main.js": "/static/js/main.10a762dd.js",
+    "static/js/787.e7d8f949.chunk.js": "/static/js/787.e7d8f949.chunk.js",
+    "static/media/russo-one.regular.ttf": "/static/media/russo-one.regular.459ee39ed0052a649177.ttf",
+    "index.html": "/index.html",
+    "main.c09abeb6.css.map": "/static/css/main.c09abeb6.css.map",
+    "main.10a762dd.js.map": "/static/js/main.10a762dd.js.map",
+    "787.e7d8f949.chunk.js.map": "/static/js/787.e7d8f949.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c09abeb6.css",
+    "static/js/main.10a762dd.js"
+  ]
+}

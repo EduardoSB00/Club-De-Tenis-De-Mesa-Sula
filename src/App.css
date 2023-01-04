@@ -1,0 +1,1833 @@
+/*General Settings*/
+
+@font-face {
+  font-family: "Russo One";
+  src: url(russo-one.regular.ttf);
+}
+
+*, *::after *,::before{
+  box-sizing: border-box;
+  font-family: "Open Sans";
+} 
+
+
+body{
+  background-color: rgba(2,74,172,255);
+  
+}
+
+.skip-navbar{
+  height: 64px;
+  width: 100vw;
+  
+}
+
+hr{
+  width: 80%;
+ margin-bottom: 35px;
+}
+
+
+/*Navbar Settings*/
+
+.navbar-container{
+  width: 100%;
+  height: 64px;
+  background-color: rgb(41, 41, 41);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.16);
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 81;
+}
+
+.side-container ul{
+  padding: 0;
+}
+
+.navbar-container *{
+  font-size: 16px;
+}
+
+.navbar-container ul{
+  display: flex;
+  gap: 35px;
+  padding: 0;
+  width:275px;
+  justify-content: end;
+}
+
+.navbar-container ul li, .side-container ul li{
+  list-style: none;
+}
+
+.navbar-container ul li a{
+  color:rgba(255, 255, 255, 0.438);
+  text-decoration: none;
+}
+
+.navbar-container ul li a:hover{
+  color:white;
+}
+
+.logo-frame-container{
+  padding-top: 40px;
+}
+
+.logo-frame{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: white;
+  margin: 0 30px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.16);
+}
+
+.navbar-logo{
+  width: 90px;
+  height: 90px;
+}
+
+.nav-light{
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  position: relative;
+  top: 19px;
+}
+
+.nav-light2{
+  width: 0;
+  height: 4px;
+  background-color: white;
+  position: relative;
+  top: 19px;
+  transition: width 0.5s ease-in-out;
+}
+
+.navbar li:hover .nav-light2{
+  width: 100%;
+}
+
+
+.side-container{
+  height: 80vh;
+  width: 80vw;
+  background-color: rgba(75, 75, 75, 0.973);
+  position: fixed;
+  top:64px;
+  left: 0;
+  z-index: 80;
+ 
+}
+
+.hamburger-icon{
+  color:rgba(255, 255, 255, 0.438);
+  font-size: 32px;
+  margin: 10px;
+  align-self: flex-end;
+
+}
+
+.hamburger-icon:hover{
+  color:white;
+}
+
+.side-nav-element{
+  width: 100%;
+  height: 13vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s;
+}
+
+.side-nav-element:hover{
+  width: 100%;
+  height: 13vh;
+  background-color:rgba(0, 0, 0, 0.342);
+}
+
+.side-nav-element-text{
+  color:rgba(255, 255, 255, 0.438);
+  text-decoration: none;
+  font-size: 2vh;
+}
+
+.side-nav-icon{
+  font-size: 3vh;
+  color:rgba(255, 255, 255, 0.438);
+  margin: 10px;
+}
+
+.side-container ul li a{
+  text-decoration: none;
+}
+
+@media (max-width:899px){
+  
+
+  .hamburger-icon{
+    position: absolute;
+    right: 30px;
+    top: 6px;
+  }
+
+  .logo-frame-container{
+    padding-top: 40px;
+  }
+
+}
+
+/*Footer Settings*/
+
+.footer-container{
+  background-color: rgb(31, 31, 31);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-title{
+  color: rgba(255, 255, 255, 0.815);
+  text-align: center;
+  font-size: 30px;
+}
+
+.footer-text{
+  color: rgba(255, 255, 255, 0.438);
+  text-align: center;
+  font-size: 20px;
+}
+
+.footer-media-icons{
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  width: 40vw;
+  justify-content: center;
+}
+
+.footer-media-icons i{
+  color: white;
+  font-size: 30px;
+
+}
+
+.footer-final-text{
+  margin-top: 100px;
+  color: rgba(255, 255, 255, 0.438);
+  text-align: center;
+  font-size: 15px;
+}
+
+.footer-final-text b{
+  color: rgba(255, 255, 255, 0.712);
+}
+
+.footer-content{
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 800px){
+  .footer-content{
+    width: 60vw;
+  }
+}
+
+
+/*Equipo General Settings*/
+
+.players-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-container{
+  width: 80vw;
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  margin: 5vh auto;
+  padding: 5vh 5vw;
+
+}
+
+.team-title{
+  font-size: 50px;
+  text-align: center;
+  font-family: "Russo One",sans-serif;
+  color:rgba(0, 0, 0, 0.849);
+}
+
+@media(max-width:520px){
+  .team-title, .events-title{
+    font-size: 30px !important;
+    margin-top: 50px !important;
+  }
+}
+
+.cat-title{
+  color:rgba(37, 37, 37, 0.849);
+  font-size: 1.5em;
+  font-family: "Russo One",sans-serif;
+  text-align: center;
+}
+
+/*Carta de Jugador Settings*/
+
+@media (max-width: 410px){
+  .player-card-img{
+    width: 200px !important;
+  }
+
+  .player-card-img-background{
+    width:200px !important;
+    left: -200px !important;
+   
+  }
+
+  .black-card-gradient{
+    top:-300px !important;
+    width: 200px !important;   
+  }
+
+  .player-card-nick{
+    font-size: 30px !important;
+  }
+
+  .card-side-info{
+    top: -645px !important;
+    right: -75px !important;
+  }
+
+  .player-card-nick{
+    top: -450px !important;
+  }
+  
+  .player-card-name{
+    margin-top: 40px !important;
+    max-width: 170px !important;
+    top: -490px !important;
+  }
+
+  .player-card-container:hover .player-card-name{
+    top: -550px !important;
+  }
+  
+  .player-card-container:hover .player-card-nick{
+    top: -510px !important;
+  }
+
+  .player-card-container:hover .card-button-container{
+    top:-605px !important;
+  }
+
+  .carta-de-jugador{
+    height: 310px !important;
+    width:270px !important
+  }
+
+  .player-card-side{
+    left: -200px !important;
+  }
+
+}
+
+.player-card-top{
+  display: flex;
+  align-content: stretch;
+}
+
+.player-card-img{
+  width:250px;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  display: inline-block;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.16);
+  transition: box-shadow 0.75s;
+  z-index: 2;
+  position: relative;
+}
+
+.player-card-img-background{
+  width:250px;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  display: inline-block;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.16);
+  transition: box-shadow 0.75s;
+  left: -250px;
+  z-index: 1;
+  position: relative;
+}
+
+.player-card-side{
+  width:50px;
+  min-width: 50px;
+  position: relative;
+  left: -250px;
+  z-index: 4;
+  display: inline-block;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.16);
+  transition: box-shadow 0.75s;
+}
+
+.black-card-gradient{
+  position: relative;
+  top:-375px;
+  left:0;
+  background-image: linear-gradient(transparent, black );
+  width: 250px;
+  aspect-ratio: 2/3;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: background-image 1s;
+  z-index: 3;
+  
+}
+
+.player-card-nick{
+  font-family: "Russo One",sans-serif;
+  font-size: 35px;
+  color: white;
+  position: relative;
+  left: 0;
+  top: -550px;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: top 0.5s;
+  z-index: 4;
+}
+
+.player-card-name{
+  font-family: "Russo One",sans-serif;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.603);
+  position: relative;
+  left: 0;
+  top: -590px;
+  margin-left: 20px;
+  z-index: 4;
+  transition: top 0.5s;
+  
+}
+
+.player-card-container{
+  width: 300px;
+  height: 400px;
+}
+
+.carta-de-jugador{
+  display: inline-block;
+  margin-top: 10px;
+  width: 320px;
+  overflow: hidden;
+}
+
+.card-side-info{
+  transform: rotate(90deg);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -808px;
+  right: -125px;
+  z-index: 5;
+}
+
+.card-logo{
+  margin: 10px;
+  height:30px;
+  transform: rotate(-90deg);
+}
+
+.card-side-info *{
+  display: inline-block;
+}
+
+.card-side-info p{
+  font-family: "Russo One",sans-serif;
+  color:rgba(0, 0, 0, 0.473)
+}
+
+.card-icon{
+  color:rgba(0, 0, 0, 0.473);
+  transform: rotate(-90deg);
+  margin: 10px;
+}
+
+.card-side-info p span{
+  font-family: "Russo One",sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.card-button-container{
+  position: relative;
+  top:-500px;
+  transition: top 0.5s;
+  left: 50px;
+  padding-top: 20px;
+  z-index: 4;
+
+}
+
+.players-container{
+  padding:10px;
+}
+
+.card-button{
+  border: 1px solid rgb(203, 204, 140);
+  border-radius: 5px;
+  height:40px;
+  background-color: rgba(0, 0, 0, 0.356);
+  color: white;
+  padding: 10px;
+  font-family: "Russo One",sans-serif;
+  cursor: pointer;
+}
+
+.player-card-container:hover .player-card-name{
+  top: -650px;
+}
+
+.player-card-container:hover .player-card-nick{
+  top: -610px;
+}
+
+.player-card-container:hover .black-card-gradient{
+  background-position: top;
+}
+
+.player-card-container:hover .card-button-container{
+  top:-705px;
+}
+
+.player-card-container:hover .player-card-side, .player-card-container:hover .player-card-img{
+  box-shadow: 15px 15px 5px 0 rgba(0, 0, 0, 0.16);
+  
+}
+
+.gold-card{
+  background-image: linear-gradient(rgb(160, 147, 77),rgb(203, 204, 140),rgb(160, 147, 77));
+}
+
+.silver-card{
+  background-image: linear-gradient(rgb(134, 134, 134),rgb(199, 199, 199),rgb(134, 134, 134));
+}
+
+.bronze-card{
+  background-image: linear-gradient(rgb(139, 93, 79),rgb(172, 143, 134),rgb(139, 93, 79));
+}
+
+.blue-card{
+  background-color: rgba(2,74,172,255);
+}
+
+.green-card{
+  background-color: rgba(86,178,77,255);
+}
+
+.yellow-card{
+  background-color: rgba(241,196,15,255);
+}
+
+.grey-card{
+  background-color: rgb(41, 41, 41);
+}
+
+/*Player Info Information*/
+
+.player-photo-container{
+  height: 100px;
+  width: 100vw;
+}
+
+
+.player-info-container{
+  width: 80vw;
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  margin: 5vh auto;
+  padding: 5vh;
+ 
+}
+
+.player-information-photo{
+  width:400px;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  border: white solid 5px;
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.16);
+  margin-top: 140px;
+  border-bottom-right-radius: 70px ;
+  border-top-left-radius: 70px;
+  position: relative;
+  z-index: 10;
+}
+
+.player-information-photo-background{
+  position: relative;
+  z-index: 9;
+  width: 400px;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  margin-left: calc(50% - 200px);
+  top: -605px;
+  border-bottom-right-radius: 70px ;
+  border-top-left-radius: 70px;
+}
+
+@media(max-width: 500px){
+  .player-information-photo{
+    width: 300px;
+  }
+
+  .player-information-photo-background{
+    width: 300px;
+    margin-left: calc(50% - 150px);
+    top: -455px;
+
+  }
+
+  .information-name-container{
+    margin-top: -530px !important;
+  }
+}
+.information-name-container{
+  width: 300px;
+  height: 100px;
+  background-color: rgba(61, 61, 61, 0.996);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.16);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  z-index: 20;
+  margin-top: -650px;
+}
+
+.player-information-nick{
+  font-family: "Russo One",sans-serif;
+  text-align: center;
+  font-size: 45px;
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.player-name-big-super{
+  position: relative;
+  top: -500px;
+  width: 90vw;
+  height: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.player-information-big-name{
+  font-size: 4vw;
+  text-transform: uppercase;
+  font-family: "Russo One",sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+  margin: auto;
+  position: relative;
+  top: 200px;
+  text-align: center;
+  margin-left: -30px;
+  z-index: 0;
+  -webkit-transform: scale(3, 7);
+  -moz-transform: scale(3, 7);
+  -o-transform: scale(3, 7);
+  transform: scale(3, 7);
+
+  background-color: #dadada;
+  background-image: linear-gradient(#dadada, #ffffff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+@media (max-width: 1200px){
+  .player-information-big-name{
+    display: none;
+  }
+
+}
+
+.player-information-name{
+  font-family: "Russo One",sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.603);
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.player-info-subcontainer{
+  margin-top: 100px;
+  width:80vw;
+  display: flex;
+  gap: 3vw;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.player-information-card{
+  width: 30vw;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.16);
+  padding: 30px;
+  min-width: 440px;
+  
+}
+
+@media (max-width: 600px) {
+  .player-information-card{
+    width: 90vw;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.16);
+    padding: 30px;
+    min-width: 0px;
+  }
+
+  .stadistics-info-container{
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .info-card-information{
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .info-card-section{
+    margin-top: 0;
+  }
+}
+
+.info-holder h4, .info-holder p{
+  margin-top: 2px;
+  margin-bottom: 0;
+  color:rgb(100, 100, 100)
+}
+
+.info-holder h4{
+  font-size: 20px;
+}
+
+.info-holder p{
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.info-card-information{
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-around;
+}
+
+.info-card-title{
+  font-size: 1.5em;
+  margin:0;
+  text-align: center;
+  font-family: "Russo One",sans-serif;
+  color:rgb(110, 110, 110)
+}
+
+.stadistics-holder h4{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  color:rgb(100, 100, 100);
+
+}
+
+.stadistics-holder p{
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color:rgb(100, 100, 100)
+}
+
+.stadistics-info-container{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.player-description{
+  background-color: white;
+  padding-bottom: 100px;
+  margin:-5vh;
+  border-radius: 10px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.16);
+  padding-top: 550px;
+}
+
+.player-description p{
+  text-align: center;
+  font-size: 20px;
+  color: rgb(66, 66, 66);
+  font-weight: bold;
+}
+
+.player-description div{
+  width: 50vw;
+  margin: auto;
+}
+
+.gallery-title{
+  text-align: center;
+  font-size: 2em;
+  margin-top: 70px;
+  font-family: "Russo One",sans-serif;
+  color:rgb(110, 110, 110)
+}
+
+.gallery-photo-container{
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.16);
+  justify-content: center;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-img{
+  height:150px;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.16);
+  transition: height 0.5s, margin 0.5s;
+  margin: 35px;
+}
+
+.gallery-img:hover{
+  height: 200px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+}
+
+
+
+/*General Event Settings*/
+
+.event-container{
+  width: 80vw;
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  margin: 5vh auto;
+  padding: 5vh 5vw;
+
+  min-height: 700px;
+}
+
+.events-title{
+  font-size: 50px;
+  text-align: center;
+  font-family: "Russo One",sans-serif;
+  color:rgba(0, 0, 0, 0.849)
+}
+
+.event-items{ 
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-event-container{
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.16);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.event-preview-img{
+  height: 250px;
+  aspect-ratio: 16/9;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  object-fit: cover;
+
+}
+
+.preview-event-title{
+  margin:0 0 5px;
+  text-overflow: ellipsis;
+  color:rgba(37, 37, 37, 0.849);
+  font-size: 1.5em;
+  text-decoration: none;
+  font-family: "Russo One",sans-serif;
+
+}
+
+.preview-event-title:hover{
+  color: rgba(104, 104, 104, 0.849);
+}
+
+.preview-event-subtitle{
+  margin:0 0 5px;
+  text-overflow: ellipsis;
+  color:rgba(54, 54, 54, 0.849);
+  
+
+}
+
+.preview-event-date{
+  margin:0;
+  text-overflow: ellipsis;
+  color:rgba(90, 90, 90, 0.849);
+
+}
+
+.preview-event-description{
+  margin:0;
+  margin-top: 10px;
+  height: 65px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color:rgba(37, 37, 37, 0.849)
+
+}
+
+.preview-event-information{
+  padding: 25px;
+}
+
+
+
+@media (max-width: 700px){
+  .preview-event-container{
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.16);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .event-preview-img{
+    width:100%;
+    height: 100%;
+    aspect-ratio: 16/7;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+  
+  }
+
+}
+
+@media (min-width: 700px) and (max-width: 1200px){
+  
+  .event-preview-img{
+    height: 250px;
+    aspect-ratio: 1/1;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+  
+  }
+}
+
+/*Event Information Page Settings*/
+
+.event-info-subtitle{
+  font-size: 1.5em;
+  text-align: left;
+  font-family: "Russo One",sans-serif;
+  color:rgba(46, 46, 46, 0.849);
+  margin-bottom: 5px;
+}
+
+
+.event-info-img{
+    width: 70%;
+    aspect-ratio: 21/9;
+    object-fit:cover ;
+    margin: auto;
+
+}
+
+@media (max-width: 1000px){
+  .event-info-img{
+    width: 100%;
+  }
+}
+
+.preview-event-information{
+  display: inline-block;
+}
+
+.event-info-description{
+  font-size: 17px;
+  text-align: justify;
+}
+
+/*Policies Settings*/
+
+.policies-info{
+  width: 60vw;
+  margin: auto;
+}
+
+.policies-info h2{
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Russo One",sans-serif;
+  color:rgba(46, 46, 46, 0.849);
+}
+
+.policies-info img{
+  width: 40%;
+  aspect-ratio: 1/1;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.policies-info p{
+  margin: 5px;
+}
+
+/*About Us Settings*/
+
+.acerca-de-container{
+  width: 85vw;
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  margin: 5vh auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  
+}
+
+.acerca-de-container hr{
+  width: 90%;
+  
+}
+
+.acerca-de-subcontainer{
+  width:85vw;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 0 0 50px;
+  margin: auto
+
+}
+
+.acerca-de-subcontainer-2{
+  width:85vw;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.16);
+  padding: 0 0 50px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  transition: padding 0.5s;
+}
+
+
+
+.acerca-de-info{
+  width:85vw;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.16);
+  padding: 0 5vw 40px;
+  margin-bottom: 50px;
+  background-color: rgb(245, 245, 245);
+  transition: padding 0.5s;
+}
+
+
+.acerca-de-buttons{
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.acerca-de-subcontainer-2 button{
+  border: solid rgba(2,74,172,255) 2px;
+  height: 60px;
+  width: 110px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+  color:rgba(2,74,172,255) ;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.5s;
+
+}
+
+.acerca-de-subcontainer-2 button:hover{
+  background-color: rgb(189, 189, 238);
+}
+
+.acerca-de-container p{
+  margin-left: 10vw ;
+  margin-right: 10vw;
+}
+
+.acerca-de-container h2{
+  margin-left: 10vw ;
+  margin-right: 10vw;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: "Russo One",sans-serif;
+  color:rgba(46, 46, 46, 0.849);
+}
+
+.acerca-de-titulo-botones{
+  margin-bottom: 20px;
+  font-family: "Russo One",sans-serif;
+  color:rgba(46, 46, 46, 0.849);
+}
+
+/*Contactos Settings*/
+
+.contact-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.contact-subtitle{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.5em;
+  margin-bottom: 80px;
+  font-family: "Russo One",sans-serif;
+  color:rgba(46, 46, 46, 0.849);
+}
+
+.email-us-subtitle{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.5em;
+  margin-bottom: 40px;
+  font-family: "Russo One",sans-serif;
+  color:rgba(46, 46, 46, 0.849);
+}
+
+.contact-info i{
+  font-size: 30px;
+  margin-bottom: 20px;
+  width: 300px;
+  color: rgb(66, 66, 66);
+}
+
+.contact-info p{
+  margin:0;
+  font-size: 20px;
+  color: rgb(66, 66, 66);
+}
+
+.contact-info{
+  margin-bottom: 30px;
+}
+
+.contact-info-2{
+  text-align: center;
+  width: 60vw;
+  margin: auto;
+  font-size: 20px;
+  color: rgb(66, 66, 66);
+}
+
+.contact-map{
+  width:100%;
+  height:500px;
+  margin-top: 50px;
+}
+
+/*Servicios Preview Settings*/
+
+.servicios-preview-container{
+  width: 20vw;
+  min-width: 300px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.16);
+  height: 600px;
+  margin: 30px;
+}
+
+
+.servicios-preview-container img{
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-top-left-radius: 10px;
+  object-fit: cover;
+  border-top-right-radius: 10px;
+}
+
+.servicios-preview-info hr{
+  width: 80%;
+  margin: 10px auto;
+}
+
+.servicios-preview-info{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicios-preview-info h2, .servicios-preview-info p{
+  text-align: center;
+}
+
+.servicios-preview-info h2{
+  font-family: "Russo One",sans-serif;
+  color:rgba(46, 46, 46, 0.849);
+  font-size: 1.5em;
+}
+
+
+.servicios-preview-info button{
+  margin:10px auto;
+  border:solid 2px rgba(2,74,172,255);
+  background-color: white;
+  height: 40px;
+  width: 140px;
+  border-radius: 10px;
+  color: rgba(2,74,172,255);
+  cursor: pointer;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.servicios-preview-info button:hover{
+  background-color: rgb(96, 96, 223);
+  color:white;
+}
+
+/*Servicios General Settings*/
+
+.service-preview-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*Servicios Information Settings*/
+
+.info-start{
+  min-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
+  gap: 50px;
+}
+
+.info-second{
+  margin: 0 5vw;
+}
+
+/* Staff Settings*/
+
+.personal-subcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.personal-container h2{
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Russo One",sans-serif;
+  color:rgba(46, 46, 46, 0.849);
+
+}
+
+/*Slide Bar Settings*/
+
+.SlideBar{
+  width: 85vw;
+  height:500px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
+  border-bottom-right-radius: 30px;
+  box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.16);
+  border-bottom-left-radius: 30px;
+}
+.SlideBar2{
+  width: 77vw;
+  display: flex;
+  flex-direction: column;
+  margin: 4vw;
+}
+
+
+.slide-container{
+  width: 85vw;
+  height: 500px
+}
+
+.slide-container img{
+  height: 500px;
+  width: 85vw;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.slide-bar-magic{
+  display: flex;
+  position: relative;
+  left:0vw;
+  transition: left 1s;
+}
+
+.slideBar-buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.slideBar-button{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  width: 6vw;
+  position: relative;
+  top: -500px;
+  justify-content: center;
+  min-width: 75px;
+  transition: background-color 0.5s;
+  
+}
+
+.slideBar-buttons i{
+  font-size: 60px;
+  color: transparent;
+  transition: color 0.5s;
+}
+
+.slideBar-button:hover{
+  background-color: rgba(255, 255, 255, 0.158);
+  cursor: pointer;
+}
+
+.slideBar-button:hover i{
+  color: rgba(255, 255, 255, 0.705);
+}
+
+.slidebar-circle{
+  background-color: transparent;
+  height: 1vw;
+  width: 1vw;
+  margin: 0.5vw;
+  border-radius: 0.5vw;
+  position: relative;
+  transition: background-color 2s;
+  min-width: 12px;
+  min-height: 12px;
+}
+
+.slideBar-circles{
+  display: flex;
+  align-self: center;
+  top: -550px;
+  position: relative;
+  
+}
+
+.slide-elements h1{
+  position: relative;
+  top:-250px;
+  text-align: center;
+  font-family: "Russo One",sans-serif;
+  color:rgb(255, 255, 255);
+  font-size: 50px;
+  transition:  top 0.5s;
+  text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.808);
+
+}
+
+.slide-elements{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.slide-elements button{
+  border: 1px solid rgba(255, 255, 255, 0.856);
+  border-radius: 5px;
+  height:40px;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  font-family: "Russo One",sans-serif;
+  cursor: pointer;
+  align-self: center;
+  position: relative;
+  top: -130px;
+  transition: top 0.5s, background-color 0.5s;
+}
+
+.slide-elements a{
+  align-self: center;
+}
+
+.slide-elements button:hover{
+  background-color: rgba(255, 255, 255, 0.527);
+}
+
+.SlideBar:hover .slide-elements button{
+  top: -300px;
+}
+
+.SlideBar:hover .slide-elements h1{
+  top: -300px;
+}
+
+.SlideBar:hover .slidebar-circle{
+  background-color: rgba(255, 255, 255, 0.658);
+  cursor: pointer;
+}
+
+@media (max-width:900px){
+  .slide-elements h1{
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 725px){
+
+  
+  .slide-elements h1{
+    font-size: 30px;
+    top:-350px;
+  }
+
+  .slide-elements button{
+    top:-350px;
+  }
+  
+  .SlideBar:hover .slide-elements h1{
+    top:-350px;
+
+  }
+
+  .SlideBar:hover .slide-elements button{
+    top:-350px;
+  }
+}
+
+/*Home Settings*/
+
+.home-container{
+  width: 85vw;
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  margin: 5vh auto;
+}
+
+.home-about-us{
+  padding: 4vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-about-us img{
+  height: 400px;
+  width: 30vw;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.home-about-us-elements h2, .home-about-us-elements2 h2{
+  margin-bottom: 20px;
+  font-family: "Russo One",sans-serif;
+  font-size: 2.5em;
+  color:rgba(46, 46, 46, 0.849);
+  margin-top: 0;
+}
+
+.home-about-us-elements{
+  width: 34vw;
+  padding: 4vw;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-about-us-elements2{
+  width: 34vw;
+  padding: 4vw;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-about-us-elements a, .home-about-us-elements2 a, .home-services a, .SlideBar2 a{
+  align-self: center;
+}
+
+@media(max-width: 850px){
+  .home-about-us img{
+    width: 100%;
+  }
+
+  .home-about-us-elements, .home-about-us-elements2{
+    width: 100%;
+  }
+}
+
+.home-about-us-elements button, .home-about-us-elements2 button, .home-services button, .player-slidebar-button, .edit-add-container button, .password-container button, .gallery-button{
+  border: 1px solid rgba(2,74,172,255);
+  border-radius: 5px;
+  height:40px;
+  background-color: white;
+  color: rgba(2,74,172,255);
+  padding: 10px;
+  font-family: "Russo One",sans-serif;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  margin-top: 20px;
+}
+
+.centered-text{
+  text-align: center;
+}
+
+.home-about-us-elements button:hover, .home-about-us-elements2 button:hover, .home-services button:hover, .player-slidebar-button:hover, .edit-add-container button:hover, .password-container button:hover{
+  background-color: rgb(96, 96, 223);
+  color:white;
+}
+
+.home-services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top:70px;
+  
+}
+
+.home-services{
+ 
+  padding: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-services-title{
+  margin-bottom: 20px;
+  font-family: "Russo One",sans-serif;
+  font-size: 2.5em;
+  color:rgba(46, 46, 46, 0.849);
+  margin-top: 0px;
+  text-align: center;
+}
+
+.home-players-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top:80px;
+}
+
+/*Error Page Settings*/
+
+.error-container img{
+  width: 50%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  margin-top: -50px;
+}
+
+.error-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Edit Settings*/
+
+
+.edit-container{
+  margin: 40px auto;
+  height: 50px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.16);
+  padding: 1vw;
+  
+}
+
+.edit-subtitle{
+  font-size: 1.5em;
+  display: inline-block;
+  font-family: "Russo One",sans-serif;
+  color:rgba(46, 46, 46, 0.849);
+  margin-right: 2vw;
+}
+
+.edit-open-button{
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: solid rgba(46, 46, 46, 0.849) 2px;
+  margin: 0 5px;
+  color: rgba(46, 46, 46, 0.849);
+  transition: color 0.5s, background-color 0.5s;
+
+}
+
+.edit-add-container{
+  background-color: white;
+  border-radius: 10px;
+  padding: 4vw;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.16);
+  transition: height 1s, padding 1s;
+  width: 40vw;
+  min-width: 300px;
+  align-self: center;
+}
+
+.edit-opened-subtitle{
+  font-size: 1.5em;
+  margin-top: 0;
+  font-family: "Russo One",sans-serif;
+  color:rgba(46, 46, 46, 0.849);
+  margin-right: 1vw;
+  text-align: center;
+}
+
+.edit-open-button:hover{
+  background-color:rgba(46, 46, 46, 0.568) ;
+  color: white;
+  cursor: pointer;
+}
+
+.edit-add-container label{
+  display: flex;
+  align-items: center;
+}
+
+.edit-add-container p{
+  margin: 0; 
+  margin-right: 3vw;
+}
+
+.edit-add-container input, .edit-add-container textarea{
+  margin: 10px 0;
+  width: 40vw;
+  max-width: 500px;
+  border-radius: 5px;
+  border: rgba(46, 46, 46, 0.568) solid 1px;
+  height: 1.5em;
+}
+
+.email-us-container textarea, .email-us-container input{
+  margin: 10px 0;
+  width: 40vw;
+  max-width: 600px;
+  border-radius: 5px;
+  border: rgba(46, 46, 46, 0.568) solid 1px;
+  height: 1.5em;
+  
+}
+
+@media(max-width: 600px){
+  .email-us-container{
+    width: 90% !important;
+  }
+}
+
+.edit-add-container textarea, .email-us-container textarea{
+  height: 10em;
+}
+
+.edit-add-container form{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.email-us-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(253, 253, 253);;
+  padding: 5vw;
+  border-radius: 10px;
+  width: 50vw;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.16);
+  margin: auto;
+  margin-top: 80px;
+
+
+}
+
+.email-us-container form{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-button{
+  align-self: center;
+}
+.password-container{
+  background-color: rgb(245, 245, 245);
+  position: fixed;
+  top:0;
+  left:0;
+  padding-top: 30vh;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.password-container input{
+  margin: 10px 0;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+  border: rgba(46, 46, 46, 0.568) solid 1px;
+  height: 1.5em;
+}
+
+.password-container form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+} 
+
+/*Loading Components*/
+
+.player-card-loading-container{
+  
+  height: 400px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  background-color: rgba(216, 216, 216, 0.493);
+  border-radius: 10px;
+}
+
+.loading-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.player-card-loading-img{
+  height: 100px;
+  width: 100px;
+  
+
+}
+
+.home-card-loading-img{
+  height: 200px;
+  width: 200px;
+  opacity: 0.65;
+}
+
+.event-preview-loading-container{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.player-card-loading-container p, .home-loading-container p, .event-preview-loading-container p{
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Russo One",sans-serif;
+  color:rgba(107, 107, 107, 0.849);
+}
+
+.home-loading-container{
+  height: 80vh;
+  width: 100%;
+ 
+
+}
