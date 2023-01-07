@@ -1,6 +1,6 @@
 # Club Sula Official Web Page
 
-This is a project for the official webpage for the Sula Table Tennis Club located in Honduras, San Pedro Sula. This takes an aproach to both their structure as a company and also their unity as a sports team.
+This is a project for the official webpage for the Sula Table Tennis Club located in Honduras, San Pedro Sula. This takes an approach to both their structure as a company and also their unity as a sports team.
 
 ## Content
 
